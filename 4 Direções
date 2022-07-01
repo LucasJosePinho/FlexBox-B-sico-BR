@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Direções</title>
+
+    <style>
+
+        .container{
+            height: 150px; /* Altura */
+            max-width: 100px; /* Comprimento */
+            display: flex;
+            border: 4px solid black;
+        }
+
+        .item{
+            background-color: brown;
+            margin: 5px; /* Defini o espaçamento entre os números para que não fiquem muito juntos e a cor pareça única */
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .row{ /* Configuração padrão em Linha da esquerda pra direita */
+            flex-direction: row;
+        }
+
+        .row-reverse{ /* Configuração de Linha invertida da direita pra esquerda */
+            flex-direction: row-reverse;
+        }
+        
+        .column{ /* Configuração de coluna */
+            flex-direction: column;
+        }
+
+        .column-reverse{ /* Configuração de coluna reversa */
+            flex-direction: column-reverse;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>FlexBox Direções (flex-direction)</h1>
+    <h2>Configuração Padrão Linha</h2>
+    <section class="container row"> 
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </section>
+      
+    <h2>Configuração Linha Invertida</h2>
+    <section class="container row-reverse"> 
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </section>
+    
+    <h2>Configuração de Coluna</h2>
+    <section class="container column"> 
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </section>
+        
+    <h2>Configuração de Coluna Invertida</h2>
+    <section class="container column-reverse"> 
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+    </section>
+
+</body>
+</html>
